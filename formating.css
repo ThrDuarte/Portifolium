@@ -6,6 +6,23 @@
 main{
     font-family: "Cutive Mono", monospace;
 }  
+
+#BtnHomeScroll{
+    cursor: pointer; 
+}
+#BtnSkillsScroll{
+    cursor: pointer; 
+}
+#BtnShelfScroll{
+    cursor: pointer; 
+}
+#BtnServicesScroll{
+    cursor: pointer; 
+}
+#BtnContactScroll{
+    cursor: pointer; 
+}
+
 .txtanimado{
     font-family: "Cutive Mono", monospace;
     color: rgb(255, 255, 255);
