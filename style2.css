@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+}
+.filtro{
+    background-color: rgba(0, 0, 0, 0); /* Fundo preto com 50% de opacidade */
+    opacity: 50%;
+    z-index: 0;
+}
+.navbar{
+    z-index: 1;
+}
+nav{
+    background-color: black;
+    opacity: 90%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    font-family: "Cutive Mono", monospace;
+    align-items: center; /* Alinha verticalmente */
+    border: 4px solid #F601C1; /* "Stroke" */
+}
+
+nav ul{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    list-style: none;
+}
+
+nav li:hover{
+    background-color: rgb(36, 36, 36);
+}
+
+footer{
+    padding-top: 200px;
+}
+
+.all{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 75vh;
+   justify-content: space-evenly;
+}
+.pefildiv{
+    height: 30vh;
+    margin-top: 50px;
+    border-radius: 100%;
+}
+.perfil{
+    width: 200px;
+    height: 200px;
+    object-fit:cover ;
+}
+
+.LogoNav{
+width: 20%;
+}
+
+
+main{
+    font-family: "Cutive Mono", monospace;
+    align-self: center;
+    width: 90%;
+    background-color:#1511ff11;
+    z-index: 0;
+}
+
+main h1{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 100px;
+    background-color: transparent;
+    opacity: 75%;
+}
+main sub{
+    color: #5D80F3;
+    opacity: 61%;
+    font-size: 25px;
+    background-color: transparent;
+    opacity: 70%;
+    margin-bottom: 20px;
+}
+.faixa1{
+    border-radius: 20px;
+    height: 100px;
+    background-color: #8306ff52;
+    font-size: 30px;
+    color: white;
+    opacity: 85%;
+    margin-top: 20px;
+}
+.skills-tittle{
+    padding-bottom: 30px;
+}
+
+.divPSkills{
+   padding-top: 50px;
+}
+
+.Btnpskills{
+    border-radius: 100px;
+    background-color: black;
+    color: #8631F3;
+    height: 50px;
+    width: 200px;
+    border: solid 1px white;
+}
+
+.l1{
+    width: 200px;
+    height: 1px;
+    background-color: white;
+}
+
+.lines{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: -1;
+}
+
+.l2{
+    position: relative;
+    left: 400px;
+    width: 1px;
+    height: 100px;
+    background-color: white;
+    top: calc(-25px);
+}
+
+.l3{
+    width: 200px;
+    height: 1px;
+    background-color: white;
+    position: relative;
+    left: 400px;
+    top: calc(-25px);
+}
+.l4{
+position: relative;
+height: 70px;
+background-color: white;
+width: 1px;
+left: 500px;
+top: calc(-108px);
+}
+
+
+.q1{
+    left: 600px;
+    top: calc(-46px);
+}
+
+.l5{
+    position: relative;
+    width: 330px;
+    background-color: white;
+    height: 1px;
+    left: 500px;
+    top: calc(-134px);
+}
+
+.q2{
+    left: 479px;
+    z-index: 2;
+}
+
+.qf1{
+    left: 517px;
+    z-index: 2;
+    top: calc(-280px);
+}
+.q3{
+    left: 800px;
+    z-index: 2;
+    top: calc(-155px);
+}
+
+.l6{
+    position: relative;
+    height: 100px;
+    background-color: white;
+    width: 1px;
+    left: 821px;
+    top: calc(-300px);
+}
+
+.q4{
+    left: 800px;
+    z-index: 2;
+    top: calc(-410px);
+}
+
+.qf2{
+    left: 565px;
+    z-index: 2;
+    top: calc(-237px);
+}
+
+/*background-color: #8631F3;*/
+
+.qf3{
+    left: 705px;
+    z-index: 2;
+    top: calc(-280px);
+}
+
+.faixa2{
+    border-radius: 20px;
+    height: 100px;
+    background-color: #066aff54;
+    font-size: 30px;
+    color: white;
+    opacity: 85%;
+    margin-top: 20px;
+}
+
+.Softlist{
+padding-top: 10px;
+color: white;
+}
+
+.Softlist ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+article{
+    font-family: "Cutive Mono", monospace;
+    align-self: center;
+    background-image: url(/images/p3.jpg);
+    z-index: 0;
+    height: 950px;
+    width: 100%;
+    background-size: calc(100% + 15%);
+    margin-top: 100px;
+    
+}
+.Projects-tittle{
+    padding-bottom: 30px;
+}
+article h1{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    background-color: transparent;
+    opacity: 60%;
+    margin-left: 80px;
+}
+article sub{
+    color: #DD00AD;
+    opacity: 61%;
+    font-size: 25px;
+    background-color: transparent;
+    opacity: 70%;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+
+article button{
+    background-color: white;
+    color: black;
+    width: 130px;
+    height: 45px;
+    border-radius: 100px;
+}
+.bt{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 600px;
+}
+
+section{
+    background-color: #131313;
+    height: 200px;
+}
+.Shelf-tittle{
+    padding-bottom: 30px;
+}
+section h1{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    background-color: transparent;
+    opacity: 60%;
+    margin-left: 80px;
+}
+section sub{
+    color: #0081DD;
+    opacity: 61%;
+    font-size: 25px;
+    background-color: transparent;
+    opacity: 70%;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+
+.non-functional{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 300px;
+    color: white;
+    padding-bottom: 200px;
+}
+
+
+
+
+
+
+
