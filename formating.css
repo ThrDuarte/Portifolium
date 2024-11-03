@@ -1,0 +1,116 @@
+.cutive-mono-regular {
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+main{
+    font-family: "Cutive Mono", monospace;
+}  
+.txtanimado{
+    font-family: "Cutive Mono", monospace;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 300;
+}
+.txtanimado span{
+    padding-left: 10px;
+    position: relative;
+}
+.txtanimado span::before{
+    content: "";
+    color: #F601C1;
+    animation: letters 20s infinite;
+}
+.txtanimado span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #F601C1;
+    right: -10px;
+    animation: cursor .8s infinite, typing 20s steps(15) infinite;
+    width: calc(100% + 14px);
+    background-color: rgb(0, 0, 0);
+}
+@keyframes letters{
+    0%,20%{content: "Arthur";}
+    26%,50%{content: "Arthur Bernardo";}
+    51%,100%{content: "Arthur Bernardo Duarte";}
+}
+@keyframes cursor{
+    0%{border-left: 2px solid rgb(0, 0, 0);}
+}
+
+@keyframes typing{
+    10%, 15%, 30% ,35% , 50%, 55%, 70%, 75%, 90%, 95%{
+    width: 0%;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+    width: calc(100% + 14px);
+    }
+}
+
+/* quadrado hard skills */
+.quadrado{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(14, 44, 212);
+    cursor: pointer;
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.quadrado:hover {
+    transform: rotate(-90deg);
+    transition: .3s;
+    background-color: #0c0c0c;
+}
+
+    
+/*.box:not(:hover) {                            
+    transform: rotate(90deg);
+    transition: .3s; 
+}
+*/
+
+
+@keyframes clouds{
+0%,100%{transition: linear; }
+}
+
+
+  
+  /* Definição da animação */
+  @keyframes move {
+    0% {
+      left: 0; /* Posição inicial */
+    }
+    50%{
+        left: 50%;
+        top: 50%;
+    }
+    100% {
+      left: 100%; /* Posição final */
+      top: 100%;
+    }
+}
+
+dialog{
+    color: black;
+    box-shadow: rgba(0, 0, 0, 100) 0px 3px 8px;
+    width: 300px;
+    }
+    dialog input{
+    width: 200px;
+    }
+    dialog menu{
+    display: flex;
+    gap: 20px;
+    width: 300px;
+    }
+    menu button{
+    height: 50px;
+    }
+    #cancel{
+        height: 50px;
+        }
